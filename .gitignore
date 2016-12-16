@@ -1,0 +1,9 @@
+#exclude my already existing files
+*.mp4
+*.mp3
+*.mkv
+*.webm
+*.PART*
+*.webm
+*.ogg
+*.jpg
