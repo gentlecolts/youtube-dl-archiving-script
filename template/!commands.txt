@@ -1,0 +1,10 @@
+full rip, audio only
+youtube-dl -i -x --sleep-interval=20 --playlist-end=$limit --rate-limit=1M -f bestaudio --download-archive .archive [url]
+
+full rip, videos
+youtube-dl -i -o "%(upload_date)s/%(title)s-%(id)s.%(ext)s" --sleep-interval=20 --rate-limit=1M --download-archive .archive [url]
+youtube-dl -i -o "%(upload_date)s/%(title)s-%(id)s.%(ext)s" --embed-thumbnail --add-metadata --sleep-interval=20 --rate-limit=1M --download-archive .archive [url]
+
+full rip, videos, only check front page for new
+youtube-dl -i -o "%(upload_date)s/%(title)s-%(id)s.%(ext)s" --sleep-interval=20 --playlist-end=100 --rate-limit=1M --download-archive .archive [url]
+youtube-dl -i -o "%(upload_date)s/%(title)s-%(id)s.%(ext)s" --embed-thumbnail --add-metadata --sleep-interval=20 --playlist-end=100 --rate-limit=1M --download-archive .archive [url]
