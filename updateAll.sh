@@ -19,7 +19,8 @@ for D in */; do
 	if [ -e url.txt ] && [ -s url.txt ]
 	then
 		echo -e "\e[38;5;34mfound url.txt and it wasnt empty, running update\e[0m"
-		./update.sh
+		#./update.sh
+		./rip.sh
 	else
 		echo -e "\e[38;5;196murl.txt not found or was empty"
 	fi
